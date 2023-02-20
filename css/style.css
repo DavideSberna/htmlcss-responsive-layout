@@ -1,0 +1,283 @@
+
+:root{
+    --blue: #077EEB;
+    --light-blue: #B5DDFF;
+    --white: #ffffff;
+    --purple: #9792E4;
+    --gold: #FDC15F;
+    --light-black: #333333;
+
+    /* font size */
+
+    --sz-h2: 3em;
+    --sz-h3: 2em;
+    --sz-h4: 1.5em;
+    --sz-p: 1.1em;
+    --sz-a: 1em;
+    --sz-icon: 6em;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.debug{
+    border: solid 1px red;
+}
+
+
+/* header settings */
+
+header{
+    background-color: var(--blue);
+    color: var(--white);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+nav{
+    height: 80px;
+}
+header nav a{
+    color: var(--white);
+}
+nav .list__menu{
+    display: none;
+}
+
+
+/* main settings */
+
+.btn__blue{
+    background-color: var(--blue);
+    border-radius: 15px;
+    max-width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+.btn__purple{
+    background-color: var(--purple);
+    border-radius: 25px;
+    max-width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
+.btn__purple-long{
+    background-color: var(--purple);
+    border-radius: 25px;
+    max-width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+.btn__white{
+    background-color: var(--white);
+    border-radius: 30px;
+    max-width: 200px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+.btn__circle{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 50%;
+}
+.line__height{
+    line-height: 1.7;
+}
+
+
+
+
+
+/* footer settings */
+footer section{
+    height: 300px;
+}
+
+
+/* display flex setting align center*/
+.d-flex{
+    display: flex;
+}
+.sp-between{
+    justify-content: space-between;
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* container setting */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* colore text / color container settings */
+.bg__blue{
+    background-color: var(--blue);
+}
+.bg__light__blue{
+    background-color: var(--light-blue);
+}
+.bg__light__black{
+    background-color: var(--light-black);
+}
+.bg__purple{
+    background-color: var(--purple);
+}
+.bg__white{
+    background-color: var(--white);
+}
+
+
+.blue{
+    color: var(--blue);
+}
+.light__blue{
+    color: var(--light-blue);
+}
+.light__black{
+    color: var(--light-black);
+}
+.purple{
+    color: var(--purple);
+}
+.white{
+    color: var(--white);
+}
+.gold{
+    color: var(--gold);
+}
+
+
+
+
+
+
+
+/* font-size settings */
+.sz-h2{
+    font-size: var(--sz-h2);
+}
+.sz-h3{
+    font-size: var(--sz-h3);
+}
+.sz-h4{
+    font-size: var(--sz-h4);
+}
+.sz-p{
+    font-size: var(--sz-p);
+}
+.sz-a{
+    font-size: var(--sz-a);
+}
+.sz-icon{
+    font-size: var(--sz-icon);
+}
+
+
+
+
+
+
+
+/* container border radius settings */
+.radius{
+    border-radius: 20px;
+}
+
+
+/* img size */
+.img__size{
+   width: 100%; 
+}
+.contain-circle{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.img__circle{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* padding  / margin settings */
+
+.padd__LR-20{
+    padding: 0 20px;
+}
+.padd__T-B-10{
+    padding: 10px 0;
+}
+.padd__all-20{
+    padding: 20px;
+}
+.marg__top-80{
+    margin-top: 80px;
+}
+.marg__top-120{
+    margin-top: 120px;
+}
+.marg__T-B-20{
+    margin: 20px 0;
+}
+
+
+
+
+/* @media screen and (min-width: 480px){
+    
+} */
+
+/* @media screen and (min-width: 768px){
+    
+} */
+
+
+
+@media screen and (min-width: 1100px){
+    nav .list__menu{
+        display: block;
+    }
+    nav .list__menu ul li{
+        padding: 0 20px;
+    }
+    nav .burger__menu{
+        display: none;
+    }
+    
+}

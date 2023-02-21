@@ -31,9 +31,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-.debug{
-    border: solid 1px red;
-}
+ 
 
 
 /* header settings */
@@ -42,6 +40,8 @@ header{
     background-color: var(--blue);
     color: var(--white);
     position: fixed;
+    left: 0;
+    top: 0;
     z-index: 1000;
     width: 100%;
 }
@@ -60,10 +60,11 @@ nav .list__menu{
 
 .btn__blue{
     background-color: var(--blue);
-    border-radius: 15px;
-    max-width: 200px;
-    height: 40px;
-    line-height: 40px;
+    border-radius: 25px;
+    max-width: 240px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
 }
 .btn__purple{
     background-color: var(--purple);
@@ -75,7 +76,7 @@ nav .list__menu{
 .btn__purple-long{
     background-color: var(--purple);
     border-radius: 25px;
-    max-width: 200px;
+    max-width: 220px;
     height: 40px;
     line-height: 40px;
 }
@@ -119,7 +120,12 @@ footer section{
 .text-center{
     text-align: center;
 }
-
+.uppercase{
+    text-transform: uppercase;
+}
+.bolder{
+    font-weight: bolder;
+}
 
 
 
@@ -130,6 +136,9 @@ footer section{
 /* container setting */
 .container{
     max-width: 1200px;
+    margin: 0 auto;
+}
+.margin__auto{
     margin: 0 auto;
 }
 
@@ -217,14 +226,32 @@ footer section{
 
 /* img size */
 .img__size{
-   width: 100%; 
+   width: 100%;
+}
+.block{
+    display: block;
+}
+
+.row__about-us{
+    padding: 80px 0 80px 0;
+}
+.row__about-us h3{
+    margin: 0 40px 30px 0;
 }
 .contain-circle{
     border-radius: 50%;
     width: 200px;
     height: 200px;
     overflow: hidden;
+    margin-bottom: 40px;
     margin: 0 auto;
+}
+.contain-circle-start{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 40px;
 }
 .img__circle{
     width: 100%;
@@ -238,19 +265,49 @@ footer section{
 /* padding  / margin settings */
 
 .padd__LR-20{
-    padding: 0 20px;
+    padding: 0 40px;
+}
+.marg__LR-50{
+    margin: 0 80px;
+}
+.marg__T-B{
+    margin: 25px 0 30px 0;
+}
+.marg__B{
+    margin-bottom: 25px;
+}
+.marg__B-15{
+    margin-bottom: 30px;
 }
 .padd__T-B-10{
     padding: 10px 0;
 }
+.padd__T-B-50{
+    padding: 50px 0 30px 0;
+}
 .padd__all-20{
-    padding: 20px;
+    padding: 40px;
+}
+.padd__B-50{
+    padding-bottom: 50px;
+}
+.padd__B-40{
+    padding-bottom: 40px;
+}
+.padd__t-B-40{
+    padding: 40px 0;
+}
+.marg__B-20{
+    margin-bottom: 40px;
 }
 .marg__top-80{
     margin-top: 80px;
 }
 .marg__top-120{
     margin-top: 120px;
+}
+.marg__top-20{
+    margin-top: 20px;
 }
 .marg__T-B-20{
     margin: 20px 0;
@@ -259,17 +316,91 @@ footer section{
 
 
 
-/* @media screen and (min-width: 480px){
+
+
+@media screen and  (min-width: 768px) and (max-width: 1100px){
+    .d__flex__media{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 20px;
+          
+    }
+
+    .card__media:first-child{
+        width: calc(((100% / 3) * 2) - 20px);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+    .card__media{
+        width: calc((100% / 3) - 20px) ;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
     
-} */
+    }
+    .img__size__media{
+        width: calc(100% / 2);
+        display: block;
+    }
+    .img__size{
+        width: 60%;
+        margin-left: 20px;
+        display: block;
+    }
+    .d__flex__expert{
+        display: flex;
+        align-items: center;
+    }
+    .left{
+        max-width: 30%;
+    }
+    .right{
+        max-width: 70%;
+    }
+    #card__expert .text-center{
+        text-align: start;
+        padding-left: 10px
+        ;
+    }
+    .padding__media{
+        padding: 10px 0;
+    }
 
-/* @media screen and (min-width: 768px){
+    #card__quality .card__media{
+        width: calc((100% / 2) - 20px);
+    }
+    .padd__T-B-10{
+        padding: 0;
+    }
+    .row__about-us{
+        padding: 0;
+    }
+    .marg__B-20{
+        margin: 0;
+    }
+    #card__about-us .d__flex__expert{
+        display: flex;
+        align-items: flex-start;
+    }
+    #card__about-us .left{
+        max-width: 60%;
+    }
+    #card__about-us .right{
+        max-width: 40%;
+
+    }
+    .contain-circle{
+        margin-bottom: 0;
+    }
     
-} */
+    
+}
 
 
 
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 1101px){
     nav .list__menu{
         display: block;
     }
@@ -279,5 +410,104 @@ footer section{
     nav .burger__menu{
         display: none;
     }
+
+    .d__flex__media{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 20px;
+          
+    }
+    
+
+    .card__media:first-child{
+        width: calc(((100% / 3) * 2) - 20px);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+    .card__media{
+        width: calc((100% / 3) - 20px) ;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+    #card__app .d-flex__media{
+        display: flex;
+        align-items: flex-end;
+    }
+    #card__app .column__media{
+        padding-bottom: 260px;
+    }
+    #card__app .d-flex__media {
+        position: relative;
+    }
+    
+    #card__app .img__size{
+        width: 45%;
+        position: absolute;
+        left: 45%;
+        bottom: 0;
+    }
+    #card__app .left__media{
+        width: 70%;
+    }
+    
+
+    .img__size__media{
+        width: calc(100% / 2);
+        display: block;
+    }
+    .img__size{
+        width: 60%;
+        margin-left: 20px;
+        display: block;
+    }
+    .d__flex__expert{
+        display: flex;
+        align-items: center;
+    }
+    .left{
+        max-width: 30%;
+    }
+    .right{
+        max-width: 70%;
+    }
+    #card__expert .text-center{
+        text-align: start;
+        padding-left: 10px
+        ;
+    }
+    .padding__media{
+        padding: 10px 0;
+    }
+
+    #card__quality .card__media{
+        width: calc((100% / 3) - 20px);
+    }
+    .padd__T-B-10{
+        padding: 0;
+    }
+    .row__about-us{
+        padding: 0;
+    }
+    .marg__B-20{
+        margin: 0;
+    }
+    #card__about-us .d__flex__expert{
+        display: flex;
+        align-items: flex-start;
+    }
+    #card__about-us .left{
+        max-width: 60%;
+    }
+    #card__about-us .right{
+        max-width: 40%;
+
+    }
+    .contain-circle{
+        margin-bottom: 0;
+    }
+    
     
 }

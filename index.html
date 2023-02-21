@@ -14,7 +14,7 @@
 <body>
     <!-- header nav (responsive nav bar) -->
     <header>
-        <nav class="d-flex sp-between container">
+        <nav id="nav-menu" class="d-flex sp-between container">
             <div>
                 <img src="./img/logo.png" alt="logo">
             </div>
@@ -34,7 +34,7 @@
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#get-started">Get Started</a></li>
+                        <li><a class="btn-white-small light__black bolder" href="#get-started">Get Started</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,32 +47,32 @@
     <!-- main with responsive layout -->
     <main>
         <section>
-                <div id="card__app" class="container">
-                    <div class="">
-                        <div class="">
-                            <div class="bg__light__blue radius">
+                <div id="col-demo-app" class="container">
+                    <div id="col-demo-app" class="m-T-120 p-B-40">
+                        <div class="row p-T-B-20">
+                            <div class="bg__light__blue radius-big p-L-T-R-20">
                                 <div class="">
-                                    <h4 class="blue sz-h4">Get a demo application</h4>
-                                    <p class="light__black sz-p line__height bolder">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ab sunt maxime incidunt dolores laborum ut laboriosam repellat deleniti tempora.</p>
-                                    <div class="btn__blue text-center">
+                                    <h4 class="blue sz-h4 m-T-20">Get a demo application</h4>
+                                    <p class="light__black sz-p line__height bolder m-T-30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ab sunt maxime incidunt dolores laborum ut laboriosam repellat deleniti tempora.</p>
+                                    <div class="btn-blue text-center m-T-B-30">
                                         <a class="white sz-a bolder" href="#">App Store</a>
                                     </div>
                                 </div>
                                 <div class=""> 
-                                    <img class="block" src="./img/phone.png" alt="phone">
+                                    <img class="img-100 block" src="./img/phone.png" alt="phone">
                                 </div>
                             </div>
                         </div>
         
-                        <div class="">
-                            <div class="bg__light__blue radius">
+                        <div class="row p-T-B-20">
+                            <div class="bg__light__blue radius-big p-all-20">
                                 <div class="text-center">
                                     <div class="">
-                                        <i class="fa-solid fa-compass-drafting sz-icon blue"></i>
+                                        <i class="fa-solid fa-compass-drafting sz-icon blue m-T-20"></i>
                                     </div>
                                     <div>
-                                        <h4 class="blue sz-h4">Get a demo application</h4>
-                                        <p class="light__black sz-p bolder">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ab sunt maxime incidunt dolores laborum ut laboriosam repellat deleniti tempora.</p>
+                                        <h4 class="blue sz-h4 m-T-20">Get a demo application</h4>
+                                        <p class="light__black sz-p bolder m-T-30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ab sunt maxime incidunt dolores laborum ut laboriosam repellat deleniti tempora.</p>
                                     </div>
                                 </div>
                             </div>
@@ -81,31 +81,31 @@
                 </div>
         </section>
         <section class="bg__purple">
-                <div class="container">
-                    <div class="">
+                <div id="col-planning" class="container">
+                    <div class="p-B-60">
                        <div>
                             <div class="">
-                                <img class="img__size" src="./img/planning1.png" alt="planning1">
+                                <img class="img-100 m-T-60" src="./img/planning1.png" alt="planning1">
                             </div>
                             <div>
-                                <h4 class="sz-h4 white">Strategic Planning</h4>
+                                <h3 class="sz-h3 white m-T-60">Strategic Planning</h3>
                                 <div>
-                                    <p class="sz-p line__height white bolder">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex nobis illum impedit delectus voluptate natus nulla esse error, laborum nihil autem rem a odit dolorum adipisci ratione assumenda doloremque vitae! Beatae est quasi quibusdam sed. Illo harum architecto eveniet molestias!</p>
+                                    <p class="sz-p line__height white m-T-60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex nobis illum impedit delectus voluptate natus nulla esse error, laborum nihil autem rem a odit dolorum adipisci ratione assumenda doloremque vitae! Beatae est quasi quibusdam sed. Illo harum architecto eveniet molestias!</p>
                                 </div>
                             </div>
                        </div>
                        <div class="">
-                            <div class="bg__white radius">
+                            <div class="bg__white radius-big p-all-20 m-T-60">
                                 <div>
-                                    <img class="img__size" src="./img/planning2.png" alt="planner2">
+                                    <img class="img-80 m-T-60" src="./img/planning2.png" alt="planner2">
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center m-T-60">
                                     <h4 class="sz-h4">App Development</h4>
                                     <div class="">
-                                        <p class="sz-p line__height bolder ">Develop an on-demand app for your delivery business to reach your targeted customers whitout any interruption</p> 
+                                        <p class="sz-p line__height italic m-T-30">Develop an on-demand app for your delivery business to reach your targeted customers whitout any interruption</p> 
                                     </div>
-                                    <div class="">
-                                        <div class="text-center bg__purple btn__circle">
+                                    <div class="m-T-B-30">
+                                        <div class="text-center bg__purple circle-arrow">
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
@@ -117,44 +117,44 @@
                 </div>
         </section>
         <section>
-                <div class="container">
-                    <div class="">
+                <div id="col-testimonials" class="container">
+                    <div class="p-B-40">
                         <div class="text-center">
-                            <p class="sz-p">Testimonials</p>
-                            <h3 class="sz-h3 purple">We are committed expert parents</h3>
-                            <p class="sz-p line__height">We place uge value on strong relationships and have the benefit they bring to our business. Customer feedback is vital in helping us to get it </p>
+                            <p class="sz-p m-T-60 uppercase">Testimonials</p>
+                            <h3 class="sz-h3 purple m-T-40">We are committed expert parents</h3>
+                            <p class="sz-p line__height m-T-30">We place uge value on strong relationships and have the benefit they bring to our business. Customer feedback is vital in helping us to get it </p>
                         </div>
-                        <div id="" class="">
-                            <div class="">
-                                <div class="bg__purple radius">
-                                    <div class="contain-circle ">
-                                        <img class="img__circle" src="./img/testimonial1.jpg" alt="testimonial">
+                        <div id="" class="m-T-40">
+                            <div class="p-T-B-20">
+                                <div class="bg__purple radius-big p-all-30">
+                                    <div class="contain-circle">
+                                        <img class="img-circle" src="./img/testimonial1.jpg" alt="testimonial">
                                     </div>
-                                    <div class="">
-                                        <p class="text-center white">Vitae suscipit mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.</p>
-                                        <p class="text-center white">Nat Reynolds</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="bg__purple radius">
-                                    <div class="contain-circle ">
-                                        <img class="img__circle" src="./img/testimonial1.jpg" alt="testimonial">
-                                    </div>
-                                    <div class="">
-                                        <p class="text-center white">Vitae suscipit mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.</p>
-                                        <p class="text-center white">Nat Reynolds</p>
+                                    <div class="p-T-B-20">
+                                        <p class="text-center white"><span class="fa fa-quote-left m-R-10"></span>Vitae suscipit mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.<span class="fa fa-quote-left m-L-10"></span></p>
+                                        <p class="text-center white bolder uppercase m-T-30">Nat Reynolds</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="">
-                                <div class="bg__purple radius">
-                                    <div class="contain-circle ">
-                                        <img class="img__circle" src="./img/testimonial1.jpg" alt="testimonial">
+                            <div class="p-T-B-20">
+                                <div class="bg__purple radius-big p-all-30">
+                                    <div class="contain-circle">
+                                        <img class="img-circle" src="./img/testimonial1.jpg" alt="testimonial">
                                     </div>
-                                    <div class="">
-                                        <p class="text-center white">Vitae suscipit mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.</p>
-                                        <p class="text-center white">Nat Reynolds</p>
+                                    <div class="p-T-B-20">
+                                        <p class="text-center white"><span class="fa fa-quote-left m-R-10"></span>Vitae suscipit mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.<span class="fa fa-quote-left m-L-10"></span></p>
+                                        <p class="text-center white bolder uppercase m-T-30">Nat Reynolds</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-T-B-20">
+                                <div class="bg__purple radius-big p-all-30">
+                                    <div class="contain-circle">
+                                        <img class="img-circle" src="./img/testimonial1.jpg" alt="testimonial">
+                                    </div>
+                                    <div class="p-T-B-20">
+                                        <p class="text-center white"><span class="fa fa-quote-left m-R-10"></span>Vitae suscipit mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.<span class="fa fa-quote-left m-L-10"></span></p>
+                                        <p class="text-center white bolder uppercase m-T-30">Nat Reynolds</p>
                                     </div>
                                 </div>
                             </div>
@@ -163,120 +163,135 @@
                 </div>
         </section>
         <section class="bg__purple ">
-                <div id="" class="container">
-                    <div>
-                        <div class="bg__white radius ">
-                            <div>
-                                <h2 class="sz-h2">01</h2>
-                                <h4 class="sz-h4">Hight Quality</h4>
+                <div id="col-quality" class="container">
+                    <div class="p-T-B-40">
+                        <div class="p-T-B-20">
+                            <div class="bg__white radius-big p-all-20">
+                                <div>
+                                    <h2 class="sz-h2 m-T-20">01</h2>
+                                    <h4 class="sz-h4">Hight Quality</h4>
+                                </div>
+                                <div>
+                                    <p class="sz-p line__height m-T-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                        voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas 
+                                        voluptate enim odio reiciendis omnis similique pariatur.</p>
+                                </div>
+                                <div class="btn-purple text-center m-T-B-30">
+                                    <a href="#">more</a>
+                                </div>
                             </div>
-                            <div>
-                                <p class="sz-p line__height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                                    voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas 
-                                    voluptate enim odio reiciendis omnis similique pariatur.</p>
+                        </div> 
+                        <div class="p-T-B-20">
+                            <div class="bg__white radius-big p-all-20">
+                                <div>
+                                    <h2 class="sz-h2 m-T-20">01</h2>
+                                    <h4 class="sz-h4">Hight Quality</h4>
+                                </div>
+                                <div>
+                                    <p class="sz-p line__height m-T-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                        voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas 
+                                        voluptate enim odio reiciendis omnis similique pariatur.</p>
+                                </div>
+                                <div class="btn-purple text-center m-T-B-30">
+                                    <a href="#">more</a>
+                                </div>
                             </div>
-                            <div class="btn__purple text-center">
-                                <a href="#">more</a>
+                        </div> 
+                        <div class="p-T-B-20">
+                            <div class="bg__white radius-big p-all-20">
+                                <div>
+                                    <h2 class="sz-h2 m-T-20">01</h2>
+                                    <h4 class="sz-h4">Hight Quality</h4>
+                                </div>
+                                <div>
+                                    <p class="sz-p line__height m-T-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                        voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas 
+                                        voluptate enim odio reiciendis omnis similique pariatur.</p>
+                                </div>
+                                <div class="btn-purple text-center m-T-B-30">
+                                    <a href="#">more</a>
+                                </div>
                             </div>
-                        </div>
+                        </div> 
+                        <div class="p-T-B-20">
+                            <div class="bg__white radius-big p-all-20">
+                                <div>
+                                    <h2 class="sz-h2 m-T-20">01</h2>
+                                    <h4 class="sz-h4">Hight Quality</h4>
+                                </div>
+                                <div>
+                                    <p class="sz-p line__height m-T-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                        voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas 
+                                        voluptate enim odio reiciendis omnis similique pariatur.</p>
+                                </div>
+                                <div class="btn-purple text-center m-T-B-30">
+                                    <a href="#">more</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="p-T-B-20">
+                            <div class="bg__white radius-big p-all-20">
+                                <div>
+                                    <h2 class="sz-h2 m-T-20">01</h2>
+                                    <h4 class="sz-h4">Hight Quality</h4>
+                                </div>
+                                <div>
+                                    <p class="sz-p line__height m-T-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                        voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas 
+                                        voluptate enim odio reiciendis omnis similique pariatur.</p>
+                                </div>
+                                <div class="btn-purple text-center m-T-B-30">
+                                    <a href="#">more</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="p-T-B-20">
+                            <div class="bg__white radius-big p-all-20">
+                                <div>
+                                    <h2 class="sz-h2 m-T-20">01</h2>
+                                    <h4 class="sz-h4">Hight Quality</h4>
+                                </div>
+                                <div>
+                                    <p class="sz-p line__height m-T-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                        voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas 
+                                        voluptate enim odio reiciendis omnis similique pariatur.</p>
+                                </div>
+                                <div class="btn-purple text-center m-T-B-30">
+                                    <a href="#">more</a>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
-                    <div>
-                        <div class="bg__white radius ">
-                            <div>
-                                <h2 class="sz-h2">01</h2>
-                                <h4 class="sz-h4">Hight Quality</h4>
-                            </div>
-                            <div>
-                                <p class="sz-p line__height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas voluptate enim odio reiciendis omnis similique pariatur.</p>
-                            </div>
-                            <div class="btn__purple text-center">
-                                <a href="#">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="bg__white radius ">
-                            <div>
-                                <h2 class="sz-h2">01</h2>
-                                <h4 class="sz-h4">Hight Quality</h4>
-                            </div>
-                            <div>
-                                <p class="sz-p line__height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas voluptate enim odio reiciendis omnis similique pariatur.</p>
-                            </div>
-                            <div class="btn__purple text-center">
-                                <a href="#">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="bg__white radius ">
-                            <div>
-                                <h2 class="sz-h2">01</h2>
-                                <h4 class="sz-h4">Hight Quality</h4>
-                            </div>
-                            <div>
-                                <p class="sz-p line__height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas voluptate enim odio reiciendis omnis similique pariatur.</p>
-                            </div>
-                            <div class="btn__purple text-center">
-                                <a href="#">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="bg__white radius ">
-                            <div>
-                                <h2 class="sz-h2">01</h2>
-                                <h4 class="sz-h4">Hight Quality</h4>
-                            </div>
-                            <div>
-                                <p class="sz-p line__height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas voluptate enim odio reiciendis omnis similique pariatur.</p>
-                            </div>
-                            <div class="btn__purple text-center">
-                                <a href="#">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="bg__white radius ">
-                            <div>
-                                <h2 class="sz-h2">01</h2>
-                                <h4 class="sz-h4">Hight Quality</h4>
-                            </div>
-                            <div>
-                                <p class="sz-p line__height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem culpa, perspiciatis facilis deleniti quaerat asperiores iusto voluptas voluptate enim odio reiciendis omnis similique pariatur.</p>
-                            </div>
-                            <div class="btn__purple text-center">
-                                <a href="#">more</a>
-                            </div>
-                        </div>
-                    </div>  
                 </div>
         </section>
         <section>
-                <div id="" class="container">
-                    <div class = "">
-                        <div class="">
+                <div id="col-about-us" class="container">
+                    <div class= "p-B-40">
+                        <div class="m-T-50">
                             <div>
                                 <h2 class="sz-h2 purple">About Us</h2>
                             </div>
                             <div>
-                                <p class="sz-p line__height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium distinctio aliquid obcaecati id eaque minima beatae? Ullam eius saepe cumque ea vel corporis eligendi harum minus blanditiis! Neque, natus suscipit praesentium, ipsam magnam quam voluptatum amet numquam esse soluta dolor temporibus sapiente, quibusdam ratione provident ducimus at corrupti maiores?</p>
+                                <p class="sz-p line__height m-T-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium distinctio aliquid obcaecati id eaque minima beatae? Ullam eius saepe cumque ea vel corporis eligendi harum minus blanditiis! Neque, natus suscipit praesentium, ipsam magnam quam voluptatum amet numquam esse soluta dolor temporibus sapiente, quibusdam ratione provident ducimus at corrupti maiores?</p>
                             </div>
                             <div>
-                                <p class="sz-p line__height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod labore magnam, libero velit inventore ratione dicta unde nobis consequatur asperiores facere adipisci explicabo incidunt nemo, possimus quaerat mollitia deleniti in aut est? Quam, alias accusamus! Eum laboriosam saepe placeat!</p>
+                                <p class="sz-p line__height m-T-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod labore magnam, libero velit inventore ratione dicta unde nobis consequatur asperiores facere adipisci explicabo incidunt nemo, possimus quaerat mollitia deleniti in aut est? Quam, alias accusamus! Eum laboriosam saepe placeat!</p>
                             </div>
                         </div>
 
-                        <div class="">
+                        <div class="m-T-50">
                             <div class="">
-                                <div class="contain-circle-start">
-                                    <img class="img__circle" src="./img/about.jpg" alt="about us">
+                                <div class="relative">
+                                    <div class="contain-circle start">
+                                        <img class="img-circle" src="./img/about.jpg" alt="about us">
+                                        <span class="absolute fa fa-quote-left"></span>
+                                    </div>
                                 </div>
                                 <div>
-                                    <h3 class="sz-h3 purple">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</h3>
+                                    <h3 class="sz-h3 purple m-T-50">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</h3>
                                 </div>
-                                <div class="btn__purple-long text-center">
-                                    <a class="white" href="#">Find me on linkedin</a>
+                                <div class="btn-purple-long text-center m-T-30 m-B-50">
+                                    <a class="white" href="#"> <i class="fa fa-linkedin-square white m-R-10"></i>Find me on linkedin</a>
                                 </div>
                             </div>
                         </div>
@@ -284,26 +299,31 @@
                 </div>
         </section>
         <section class="bg__purple">
-                <div class="container text-center">
-                    <div>
-                        <p class="sz-p white uppercase">Get started</p>
-                    </div>
-                    <div>
-                        <h3 class="sz-h3 white">Simple, transparent Pricing</h3>
-                    </div>
-                    <div>
-                        <h2 class="sz-h2 gold ">It's Free!</h2>
-                    </div>
-                    <div>
-                        <p class="sz-p line__height white">We're still in beta and we be for awhile. As we more functionality, we'll look into other plans with more controls</p>
-                        <div class="btn__white text-center">
-                            <a class="purple" href="#">Get Started</a>
+                <div class="p-T-B-40">
+                    <div id="col-free" class="container text-center">
+                        <div class=>
+                            <div class="m-B-30">
+                                <p class="sz-p white uppercase">Get started</p>
+                            </div>
+                            <div>
+                                <h3 class="sz-h3 white m-T-30 m-L-R-60">Simple, transparent Pricing</h3>
+                            </div>
+                            <div>
+                                <h2 class="sz-h2 gold m-T-30">It's Free!</h2>
+                            </div>
+                            <div>
+                                <p class="sz-p line__height white m-T-B-30">We're still in beta and we be for awhile. As we more functionality, we'll look into other plans with more controls</p>
+                                <div class="btn-white text-center">
+                                    <a class="purple" href="#">Get Started</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="text-center m-T-40">
+                        <small class="white">Copy 2021 Boolean - classe XX - <a class="white" href="#">Privacy policy</a></small>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <small class="white">Copy 2021 Boolean - classe XX - <a class="white" href="#">Privacy policy</a></small>
-                </div>
+
         </section>
     </main>
 
@@ -312,11 +332,11 @@
     <!-- footer with responsive layout -->
     <footer>
         <section class="bg__light__black">
-              <div class="container text-center">
+              <div class="container text-center p-T-B-40 m-L-R-60">
                   <div class="">
-                      <small class="white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus quis doloremque unde vitae nemo officiis? Accusantium mollitia suscipit similique.</small>
+                      <small class="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus quis doloremque unde vitae nemo officiis? Accusantium mollitia suscipit similique.</small>
                   </div>
-                  <div class="">
+                  <div class="m-T-40">
                       <small class="white"><a href="#">Lorem ipsum</a> scelerisque mauris pellentesque <a href="#">Boolean careers</a></small>
                   </div>
               </div>
